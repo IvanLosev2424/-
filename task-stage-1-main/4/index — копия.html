@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" enctype="multipart/form-data">
+            <div> <!--ФИО-->
+
+                <div>   
+                <label for="name">ФИО: </label>
+                <input id="name" name="name" type="text" placeholder="ФИО" value="">
+                </div>
+                
+               
+                <div>
+                    <label for="email">Email address:</label>
+                    <input id="email" type="email" required name="email">
+                </div>
+                 
+                
+                
+                 <div>
+                <label for="password1">Password:</label>
+                <input id="password1" type="password" placeholder="пароль" required name=up>
+                 </div>
+               <div>
+                 <input id="password2" type="hidden"  name="password2" value="123" >
+               </div>
+           
+                 
+            </div>
+            <div>
+              
+                <label for="file-upload">Выберите изображение:</label>
+                <input type="file" id="file-upload" name="file-upload" accept="image/*">
+          
+            </div>
+
+           
+
+            <div>
+                <label for="blue">
+                Синий
+                <input id="blue" type="checkbox" name="colors" value="blue">
+                </label>
+                <label for="red">
+                Красный
+                <input id="red" type="checkbox" name="colors" value="red">
+                </label>
+            </div>
+
+
+
+            <div> <!--опрос-->
+                <fieldset>
+                <legend>Did the movie pass the Bechdel test?</legend>
+                <label><input type="radio" name="bechdel" value="no-characters"> No, there are not even two female characters in the movie. </label>
+                <label><input type="radio" name="bechdel" value="no-names"> No, the female characters never talk to each other. </label>
+               <label><input type="radio" name="bechdel" value="no-topic"> No, when female characters talk to each other it's always about a male character. </label>
+                <label><input type="radio" name="bechdel" value="yes" required> Yes. </label>
+                <label><input type="radio" name="bechdel" value="unknown"> I don't know. </label>
+                </fieldset>
+            </div>
+
+         
+          
+            
+        </div>
+
+            <!-- по умолчанию type="submit" -->
+            <button>Отправить</button>
+        </form>
+    </div>
+</body>
+</html>

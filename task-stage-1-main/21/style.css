@@ -1,0 +1,122 @@
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+body {
+margin: 0;
+}
+
+ol,li{
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Добавил */
+
+/* ul#horiznav, #horiznav ul{/* также удалите маркеры из выпадающего списка ul
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  height:32px
+  } */
+  
+  /* #horiznav li{
+  float:left;
+  width:152px;
+  position:relative/*установленное положение: относительное в качестве начальной точки для абсолютного позиционирования выпадающего списка 
+  } */
+  
+  /* #horiznav li a{
+  display:block;
+  width:150px;
+  line-height:30px;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  background-color:#EA9531;
+  border:1px solid white
+  }
+   */
+   #horiznav li a:hover{ /* модефикатор для horiznav__link */
+  color:#333333
+  }
+  
+  /* #horiznav li ul{ Готово
+  display:none;/*скрыть выпадающий список
+  position:absolute;/*расположите его абсолютно..
+  left:0;/*...выровняйте левый край с левым краем родительского элемента li...
+  top:32px/*...и на 32 пикселя вниз от вершины - высота 30 пикселей + 2 пикселя для границыr
+  } */
+  
+  #horiznav li:hover ul {
+  display:block/*отображать ul при наведении курсора на родительский li*/
+  }
+  
+
+   /* #horiznav li ul a{ Готово
+  background-color:#FFB33B/*придайте выпадающему списку другой цвет фона
+  }  */
+
+
+  /* Изменения на бэм: */
+
+.horiznav{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  display: flex;
+} 
+.horiznav__link{
+  display:block;
+  width:150px;
+  line-height:30px;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  background-color:#EA9531;
+  border:1px solid white
+} 
+
+.horiznav__1{
+  display:none;/*скрыть выпадающий список*/
+  position:absolute;/*расположите его абсолютно..*/
+  left:0;/*...выровняйте левый край с левым краем родительского элемента li...*/
+  top:32px/*...и на 32 пикселя вниз от вершины - высота 30 пикселей + 2 пикселя для границыr*/
+}
+.horiznav__element:hover .horiznav__1 {
+  display:block/*отображать ul при наведении курсора на родительский li*/
+  }
+.horiznav__yellow{
+  display:block;
+  width:150px;
+  line-height:30px;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  background-color:#FFB33B/*придайте выпадающему списку другой цвет фона*/
+}
+.horiznav__element{
+    width:152px;
+  position:relative
+}

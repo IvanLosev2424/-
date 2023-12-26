@@ -1,0 +1,85 @@
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+body {
+margin: 0;
+}
+
+ol,ul{
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.heading{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    background-color: azure;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.list-mark{
+    content: "";
+    padding-left: 40px;
+    background-image: url(…);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    min-height: 24px;
+    background-position: left;
+}
+
+
+
+.task-list {
+    counter-reset: tasks 0;
+    list-style: none;
+
+
+}
+
+.task-list__item {
+    margin-bottom: 10px;
+    padding: 20px;
+    position: relative;
+}
+.task-list__item:nth-child(odd) {
+    background-color: rgb(221, 224, 180);
+}
+.task-list__item::before{
+    counter-increment: tasks;
+    content:counter(tasks)
+    
+}
+.list-mark__item{
+    content: "";
+     padding-left: 40px;
+     background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.663 3.773A9 9 0 1021 12v-.92a1 1 0 112 0V12A11.002 11.002 0 018.188 22.313a11 11 0 118.289-20.366 1 1 0 11-.814 1.827z' fill='%23f8c300'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.707 3.293a1 1 0 010 1.414l-10 10.01a1 1 0 01-1.414 0l-3-3a1 1 0 111.414-1.414L12 12.595l9.293-9.302a1 1 0 011.414 0z' fill='%23f8c300'/%3E%3C/svg%3E");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    min-height: 24px;
+    background-position: left;
+}
+.task-list__item--3{
+    counter-set: tasks 3;
+}

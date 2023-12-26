@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 15</title>
+    <style>
+        .container{
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        
+        }
+        
+       
+        .grid{
+            
+            padding: 50px;
+            font-size: 18px;
+            /* grid-auto-flow: dense; */
+
+
+            display: grid;
+            grid-template-areas:
+            "a a"
+            "b c"
+            "b d";
+            grid-template-rows: 50px 1fr 30px;
+            grid-template-columns: 150px 1fr;
+        }
+      
+
+        .grid__item--1 {
+            grid-area: a;
+            background-color: #8ca0ff;
+        }
+
+        .grid__item--2 {
+            grid-area: b;
+            background-color: #ffa08c;
+        }
+
+        .grid__item--3{
+            grid-area: c;
+            background-color: #ffff64;
+        }
+
+        .grid__item--4 {
+            grid-area: d;
+            background-color: #8cffa0;
+        }
+
+    </style>
+</head>
+<body class="container">
+    
+    <div class="grid">
+        <div class="grid__item grid__item--1">
+            1
+        </div>
+        <div class="grid__item grid__item--2">
+            2
+        </div>
+        <div class="grid__item grid__item--3">
+            3
+        </div>
+        <div class="grid__item grid__item--4">
+            4
+        </div>
+    </div>
+</body>
+</html>
