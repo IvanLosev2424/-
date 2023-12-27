@@ -14,6 +14,23 @@
         const result = ''
 
         alert(result);
-    </script>
+
+        function splitTextByWord(text, word) {
+        // Перебираем все слова в тексте
+        for (let i = 0; i < text.length; i++) {
+            // Если текущее слово равно слову для разделения
+            if (text[i] === word) {
+            // Возвращаем часть текста до слова-разделителя
+            return text.substr(0, i);
+            }
+        }
+
+        // Если не нашли разделитель, возвращаем весь текст
+        return text;
+        }
+
+        console.log("Текст до разделителя:", splitTextByWord(text, word));
+        </script>
+
 </body>
 </html>

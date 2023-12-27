@@ -7,9 +7,30 @@
 </head>
 <body>
     <script>
-        const age = 10
-        console.log(typeof age)
+        var Undefined;
+        var Null;
+        var Boolean;
+        var Number;
+        var BigInt;
+        var Symbol;
+        var String;
+        var Object;
+        var Array;
+        var Function;
+        var Date;
+        
+        console.log(typeof Undefined);
+        console.log(typeof Null);
+        console.log(typeof Boolean);
+        console.log(typeof Number);
+        console.log(typeof BigInt);
+        console.log(typeof Symbol);
+        console.log(typeof String);
 
+        console.log(Object.prototype.toString.call(Object));
+        console.log(Array.prototype.toString.call(Array));
+        console.log((Function.prototype).toString.call(Function));
+        console.log(Date.prototype.toLocaleString.call(new Date()));
 
     </script>
 </body>
